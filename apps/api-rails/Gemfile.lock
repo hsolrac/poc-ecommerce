@@ -96,6 +96,8 @@ GEM
     erubi (1.13.1)
     et-orbi (1.2.11)
       tzinfo
+    factory_bot (6.5.1)
+      activesupport (>= 6.1.0)
     fugit (1.11.1)
       et-orbi (~> 1, >= 1.2.11)
       raabro (~> 1.4)
@@ -266,6 +268,9 @@ GEM
       rubocop (>= 1.72)
       rubocop-performance (>= 1.24)
       rubocop-rails (>= 2.30)
+    rubocop-rspec (3.5.0)
+      lint_roller (~> 1.1)
+      rubocop (~> 1.72, >= 1.72.1)
     ruby-progressbar (1.13.0)
     securerandom (0.4.1)
     shoulda-matchers (6.4.0)
@@ -326,12 +331,16 @@ DEPENDENCIES
   bootsnap
   brakeman
   debug
+  factory_bot
   kamal
   pg (~> 1.1)
   puma (>= 5.0)
   rails (~> 8.0.1)
   rspec-rails (~> 7.0.0)
+  rubocop-performance
+  rubocop-rails
   rubocop-rails-omakase
+  rubocop-rspec
   shoulda-matchers (~> 6.0)
   solid_cable
   solid_cache
